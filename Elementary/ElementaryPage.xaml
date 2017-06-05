@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages:BasePage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:Elementary" 
+    xmlns:pages="clr-namespace:Elementary.Pages;assembly=Elementary"
+    x:Class="Elementary.ElementaryPage">
+    <StackLayout HorizontalOptions="Center" BindingContext="{x:Reference LabelSlider}">
+        <Button x:Name="QuoteButton" Text="Shuffle" Clicked="Handle_Clicked" />
+        <Label 
+            x:Name="SliderValueLabel"
+            Text="{Binding Value, StringFormat='The current font size is {0:F2}'}"
+            Opacity="{Binding Value}">
+        </Label>
+        <Slider x:Name="LabelSlider" ValueChanged="Handle_ValueChanged" />
+        <Label x:Name="QuoteLabel" />
+    </StackLayout>
+</pages:BasePage>

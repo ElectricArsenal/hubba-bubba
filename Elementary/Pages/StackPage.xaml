@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages:BasePage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:pages="clr-namespace:Elementary.Pages;assembly=Elementary"
+    x:Class="Elementary.Pages.StackPage">
+    <StackLayout 
+        BackgroundColor="Lime" 
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+        Spacing="20"
+        Padding="40">
+        <Label Text="Label One" BackgroundColor="Blue" />
+        <Label Text="Label Two" BackgroundColor="Blue" />
+        <Label Text="Label Three" BackgroundColor="Blue" />
+    </StackLayout>
+</pages:BasePage>

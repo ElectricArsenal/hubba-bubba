@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages:BasePage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:pages="clr-namespace:Elementary.Pages;assembly=Elementary"
+    x:Class="Elementary.Pages.ImageSharingPage">
+    <StackLayout>
+        <Label Text="@superuser"></Label>
+            <Image Source="https://i.imgur.com/RZOQG6V.jpg"></Image>
+        <StackLayout Padding="20, 0, 0, 0" Orientation="Horizontal">
+            <Button Text="Like"></Button>
+            <Button Text="Comment"></Button>
+            <Button Text="Share"></Button>
+        </StackLayout>
+        <StackLayout Padding="20, 0, 20, 0">
+            <BoxView HeightRequest="1" BackgroundColor="#f0f0f0"></BoxView>
+            <Label FontAttributes="Bold" Text="700 likes"></Label>
+            <Label Text="DSA Raindrop"></Label>
+        </StackLayout>
+    </StackLayout>
+</pages:BasePage>
